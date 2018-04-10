@@ -418,6 +418,10 @@ public class MyLocation {
 		mListeners.remove(listener);
 	}
 
+	/**
+	 * Prevents updates when location is no significantly changes
+	 * @param threshold the approximate distance in meters
+	 */
 	public void setDistanceThreshold(float threshold) {
 		mListenerDistanceThreshold = threshold;
 	}
